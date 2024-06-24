@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #070625;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+ul{
+   list-style: none;
+}
+
+
+                                      /* navbar */
+.main_nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(22 21 49);
+}
+
+.logo_section{
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+.globe_logo{
+    font-size: 25px;
+}
+
+.nav_links ul {
+    display: flex;
+}
+
+.nav_links li{
+    padding: 10px;
+}
+                                         /* header style */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header .earth_image{
+    width: 40%;
+}
+
+header .earth_text_container{
+    width: 40%;
+}
+.earth_text_container h1{
+    margin-bottom: 2%;
+ }
+
+.earth_text_container p{
+   text-align: justify;
+   margin-bottom: 2%;
+}
+
+.earth_details .detail1{
+    justify-content: center;
+    padding: 1% 2%;
+    border:1px solid white
+}
+
+
+@media  screen and (max-width:600px) {
+    .main_nav_bar{
+        flex-direction: column;
+    }
+    .header{
+        flex-direction: column;
+    }
+
+    header .earth_image{
+        width: 70%;
+    }
+    
+    header .earth_text_container{
+        width: 70%;
+    }
+}
+  
